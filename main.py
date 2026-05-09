@@ -33,10 +33,8 @@ from reserva import (
 )
 
 
-# ------------------------------------------------------------
 # CONFIGURACION DEL SISTEMA DE LOGS
 # Todos los eventos y errores se registran en sistema_fj.log
-# ------------------------------------------------------------
 
 def configurar_logs():
     """
@@ -65,9 +63,7 @@ def registrar_error(mensaje: str):
     logging.error(mensaje)
 
 
-# ------------------------------------------------------------
 # SEPARADORES VISUALES
-# ------------------------------------------------------------
 
 def separador(titulo: str = ""):
     """Imprime una linea separadora con titulo opcional."""
@@ -85,10 +81,8 @@ def imprimir_resultado(exito: bool, mensaje: str):
     print(f"  {icono} {mensaje}")
 
 
-# ------------------------------------------------------------
 # BLOQUE 1: REGISTRO DE CLIENTES
 # Operaciones 1-4: clientes validos e invalidos
-# ------------------------------------------------------------
 
 def bloque_clientes():
     """
@@ -156,10 +150,8 @@ def bloque_clientes():
     return clientes_creados
 
 
-# ------------------------------------------------------------
 # BLOQUE 2: CREACION DE SERVICIOS
 # Operaciones 5-7: servicios validos e invalidos
-# ------------------------------------------------------------
 
 def bloque_servicios():
     """
@@ -233,10 +225,8 @@ def bloque_servicios():
     return servicios_creados
 
 
-# ------------------------------------------------------------
 # BLOQUE 3: GESTION DE RESERVAS
 # Operaciones 8-12: reservas exitosas, fallidas y canceladas
-# ------------------------------------------------------------
 
 def bloque_reservas(clientes: list, servicios: list):
     """
@@ -359,9 +349,7 @@ def bloque_reservas(clientes: list, servicios: list):
         print("  [LOG] Servicio restaurado al estado disponible.")
 
 
-# ------------------------------------------------------------
 # BLOQUE 4: RESUMEN FINAL DEL SISTEMA
-# ------------------------------------------------------------
 
 def mostrar_resumen(clientes: list, servicios: list):
     """
@@ -389,9 +377,7 @@ def mostrar_resumen(clientes: list, servicios: list):
     separador()
 
 
-# ------------------------------------------------------------
 # FUNCION PRINCIPAL
-# ------------------------------------------------------------
 
 def main():
     """
