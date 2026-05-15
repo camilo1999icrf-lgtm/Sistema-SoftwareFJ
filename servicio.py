@@ -14,6 +14,9 @@ class ServicioInvalidoError(Exception):
 class CostoInvalidoError(Exception):
     pass
 
+class DuracionInvalidaError(Exception):
+    pass
+
 
 # clase abstracta servicio
 
